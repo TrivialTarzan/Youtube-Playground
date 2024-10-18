@@ -10,7 +10,6 @@ Feature: Adding test feature
     And there was no real need to have any
     Then I added one
     When felt I had to
-    And so there we are
 
     Examples:
       | new1 | password| full name           | alias   | company | address     | city  | zip code| phone      |
