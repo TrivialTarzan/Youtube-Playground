@@ -4,10 +4,12 @@ from selenium.webdriver.chrome.options import Options
 
 class WebDriverHooks:
 
-    def __init__(self, driver):
-        self.driver = driver
+    def __init__(self):
+        self.driver = None
 
     def set_driver(self):
+        # initializing a webdriver
+
         chrome_options = Options()
         chrome_options.add_argument("--disable-blink-features=AutomationControlled") # -> Prevents bot detection
         chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.cookies": 2})
@@ -25,7 +27,10 @@ class WebDriverHooks:
             self.driver.quit()
 
     def get_driver(self):
-        return self.driver
+        # returns a driver only if initialized (not None)
+
+        if self.driver:
+            return self.driver
 
 
 
