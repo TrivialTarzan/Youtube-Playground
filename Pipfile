@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 selenium = "*"
 behave = "*"
+selenium-page-factory = "*"
 
 [dev-packages]
 

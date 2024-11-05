@@ -24,8 +24,6 @@ class WebDriverHooks:
         if self.driver:
             self.driver.quit()
 
-    def hide_cookies_window(self):
-
     def get_driver(self):
         return self.driver
 
