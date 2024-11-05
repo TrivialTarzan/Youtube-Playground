@@ -1,5 +1,8 @@
 src/utils/credentials.json
 
+# Removing requirements.txt since it is redundant bacause of Pipfile & Pipfile.lock.
+requirements.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -168,3 +171,5 @@ cython_debug/
 
 # User-specific stuff
 .idea/
+
+
