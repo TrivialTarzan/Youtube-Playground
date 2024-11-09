@@ -4,8 +4,9 @@ from selenium.webdriver.chrome.options import Options
 
 class WebDriverHooks:
 
-    def __init__(self):
+    def __init__(self, url="https://www.youtube.com/"):
         self.driver = None
+        self.URL = url
 
     def set_driver(self):
         # initializing a webdriver
@@ -20,7 +21,7 @@ class WebDriverHooks:
         # chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.cookies": 2})
 
         self.driver = webdriver.Chrome(options=chrome_options)
-        self.driver.get("https://allegro.com.allegrosandbox.pl/log-in")
+        self.driver.get(self.URL)
         self.driver.execute_script(
             "document.querySelectorAll('allegro.gdpr.consents').forEach(el => el.remove());"
         )
