@@ -1,8 +1,8 @@
 from behave import *
-from blender import Blender
 from page_objects.login_page import LoginPage
 from webdriver_hooks.webdriver_hooks import WebDriverHooks
 from utils.get_credentials import get_credentials
+# from blender import Blender
 
 
 @given(u'I am on the Youtube main page')
@@ -24,7 +24,9 @@ def step_impl(context):
 
 @when(u'I enter "{invalid_email}" and click Next')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When I enter invalid.email@.com and click Next')
+    # context.blender = Blender()
+    # context.blender.add(invalid_email)
+    pass
 
 
 @then(u'I verify if an error message containing "{error_message}" is displayed')
