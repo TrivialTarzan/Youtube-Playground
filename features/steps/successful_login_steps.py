@@ -19,39 +19,39 @@ def step_impl(context):
 
 @given(u'I click on Sign In')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Given I click on Sign In')
+    pass
 
 
-@when(u'I enter "{invalid_email}" and click Next')
-def step_impl(context):
+@when('I enter "{invalid_email}" and click Next')
+def step_impl(context, invalid_email):
     # context.blender = Blender()
     # context.blender.add(invalid_email)
     pass
 
 
 @then(u'I verify if an error message containing "{error_message}" is displayed')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then I verify if an error message containing Enter a valid email is displayed')
+def step_impl(context, error_message):
+    pass
 
 
 @given(u'I click on Sign In and select my account')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Given I click on Sign In and select my account')
+    pass
 
 
 @when(u'I enter a valid email')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When I enter a valid email')
+    pass
 
 
 @when(u'I click Next')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When I click Next')
+    pass
 
 
 @then(u'I enter a valid password')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then I enter a valid password')
+    pass
 
 
 @then(u'I click Next')

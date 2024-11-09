@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-selenium = "*"
-behave = "*"
+selenium = ">=4.25.0"
+behave = ">=1.2.6"
 selenium-page-factory = "*"
 blender = "*"
 
