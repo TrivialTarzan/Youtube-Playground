@@ -4,8 +4,8 @@ Feature: Login functionality
   Scenario Outline: Unsuccessful login
     Given I am on the YouTube main page
     And I click on Sign In
-    When I enter <invalid_email> and click Next
-    Then I verify if an error message containing <error_message> is displayed
+    When I enter "<invalid_email>" and click Next
+    Then I verify if an error message containing "<error_message>" is displayed
 
     Examples:
       | invalid_email      | error_message       |
