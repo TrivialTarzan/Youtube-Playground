@@ -5,7 +5,7 @@ from utils.get_credentials import get_credentials
 
 
 @given('you are on the Allegro login page')
-def navigate_to_login_page(context):
+def step_impl(context):
     WebDriverHooks().set_driver()
     context.driver = WebDriverHooks().get_driver()
 
@@ -16,17 +16,17 @@ def navigate_to_login_page(context):
     LoginPage(context.driver, user_name, password)
 
 
-@then('you enter your username and password')
-def enter_credentials(context):
+@given('you enter your username and password')
+def step_impl(context):
     assert True is not False
 
 
 @then('you click log in')
-def log_in(context):
+def step_impl(context):
     assert context.failed is False
 
 
-@when('you log out')
-def log_out(context):
+@then('you log out')
+def step_impl(context):
     pass
 

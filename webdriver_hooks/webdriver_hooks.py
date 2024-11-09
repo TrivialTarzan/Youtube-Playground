@@ -12,7 +12,12 @@ class WebDriverHooks:
 
         chrome_options = Options()
         chrome_options.add_argument("--disable-blink-features=AutomationControlled") # -> Prevents bot detection
-        chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.cookies": 2})
+        # the next two variables block all the third party cookies
+        chrome_options.add_experimental_option("profile.default_content_setting_values.cookies", 1)
+        chrome_options.add_experimental_option("profile.cookie_controls_mode", 1)
+
+        # blocks all the cookies
+        # chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.cookies": 2})
 
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.get("https://allegro.com.allegrosandbox.pl/log-in")
