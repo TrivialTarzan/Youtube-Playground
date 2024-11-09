@@ -1,7 +1,7 @@
 from behave import *
-from src.page_objects.login_page import LoginPage
-from src.webdriver_hooks.webdriver_hooks import WebDriverHooks
-from src.utils.get_credentials import get_credentials
+from page_objects.login_page import LoginPage
+from webdriver_hooks.webdriver_hooks import WebDriverHooks
+from utils.get_credentials import get_credentials
 
 
 @given('you are on the Allegro login page')
